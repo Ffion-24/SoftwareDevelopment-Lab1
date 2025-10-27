@@ -1,0 +1,2 @@
+sentence =input("In one sentence describe your favorite code.")
+print(len(sentence))
