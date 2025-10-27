@@ -1,0 +1,36 @@
+#Task 1
+name = input("What is your name?")
+print("Hello",name)
+#Task 2
+sentence =input("In one sentence describe your favorite code.")
+print(len(sentence))
+#Task 3
+user_height_cm =int(input("What is your height in cm?"))
+friend1_height_cm =int(input("What is your friends height in cm?"))
+friend2_height_cm = int(input("What is your other friends height in cm?"))
+#Calculating the average on line 12
+print(((friend1_height_cm+friend2_height_cm+user_height_cm)/3),"cm")
+#Task 4
+average_height_inches = float (((friend1_height_cm+friend2_height_cm+user_height_cm)/3)/2.54)
+print(f'{average_height_inches: .4}')
+#Task 5
+height_feet = (average_height_inches//12)
+remaining_inches=float((average_height_inches%12)*10)
+print(height_feet , "feet", f'{remaining_inches: .2}' , "inches")
+#Task 6
+#Getting the data
+user_height_feet = int(input("What is your height in feet? (inches input next)"))
+user_height_inches = int(input("What is your height in inches? (remaining inches)"))
+friend1_height_feet = int(input("What is your 1st friends height in feet? (inches input next)"))
+friend1_height_inches = int(input("What is your 1st friends height in inches? (remaining inches)"))
+friend2_height_feet = int(input("What is your 2nd friends height in feet? (inches input next)"))
+friend2_height_inches = int(input("What is your 2nd friends height in inches? (remaining inches)"))
+#Transforning the data into inches
+user_height_total = ((user_height_feet*12)+user_height_inches)
+friend1_height_total = ((friend1_height_feet*12)+friend1_height_inches)
+friend2_height_total = ((friend2_height_feet*12)+friend2_height_inches)
+inches_average_overall=((user_height_total+friend1_height_total+friend2_height_total)/3)
+#Transforming from inches to feet and displaying it
+feet_average = (inches_average_overall//12)
+remaining_average=float(inches_average_overall%12)
+print(feet_average , "Feet" ,f'{remaining_average: .2}' , "Inches")
