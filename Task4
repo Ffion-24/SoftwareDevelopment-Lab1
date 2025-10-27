@@ -1,3 +1,0 @@
-#Task 4
-average_height_inches = float (((friend1_height_cm+friend2_height_cm+user_height_cm)/3)/2.54)
-print(f'{average_height_inches: .4}')

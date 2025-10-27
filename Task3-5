@@ -1,0 +1,13 @@
+#Task 3
+user_height_cm =int(input("What is your height in cm?"))
+friend1_height_cm =int(input("What is your friends height in cm?"))
+friend2_height_cm = int(input("What is your other friends height in cm?"))
+#Calculating the average on line 6
+print(((friend1_height_cm+friend2_height_cm+user_height_cm)/3),"cm")
+#Task 4
+average_height_inches = float (((friend1_height_cm+friend2_height_cm+user_height_cm)/3)/2.54)
+print(f'{average_height_inches: .4}')
+#Task 5
+height_feet = (average_height_inches//12)
+remaining_inches=float((average_height_inches%12)*10)
+print(height_feet , "feet", f'{remaining_inches: .2}' , "inches")

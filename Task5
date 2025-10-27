@@ -1,4 +1,0 @@
-#Task 5
-height_feet = (average_height_inches//12)
-remaining_inches=float((average_height_inches%12)*10)
-print(height_feet , "feet", f'{remaining_inches: .2}' , "inches")

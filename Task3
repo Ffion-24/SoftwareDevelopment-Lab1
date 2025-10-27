@@ -1,6 +1,0 @@
-#Task 3
-user_height_cm =int(input("What is your height in cm?"))
-friend1_height_cm =int(input("What is your friends height in cm?"))
-friend2_height_cm = int(input("What is your other friends height in cm?"))
-#Calculating the average on line 12
-print(((friend1_height_cm+friend2_height_cm+user_height_cm)/3),"cm")
